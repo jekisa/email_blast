@@ -1,0 +1,148 @@
+/* [project]/src/login.css [app-client] (css) */
+.login-page {
+  color: #3f505b;
+  background: #e7edf5;
+  place-items: center;
+  min-height: 100vh;
+  padding: 32px 20px;
+  font-family: DM Sans, sans-serif;
+  display: grid;
+}
+
+.login-card {
+  text-align: center;
+  background: #e7edf5;
+  border-radius: 30px;
+  width: min(100%, 390px);
+  padding: 44px 42px 35px;
+  box-shadow: 14px 14px 28px #c6ccd3, -14px -14px 28px #fff;
+}
+
+.login-brand {
+  justify-items: center;
+  gap: 6px;
+  margin-bottom: 28px;
+  display: grid;
+}
+
+.login-brand-name {
+  color: #368f9b;
+  letter-spacing: -.5px;
+  font-family: Playfair Display, serif;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.login-brand-caption {
+  color: #8a98a6;
+  letter-spacing: 1.8px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.login-card h1 {
+  color: #40515d;
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.login-intro {
+  color: #8997a4;
+  margin: 8px 0 28px;
+  font-size: 13px;
+}
+
+.login-form {
+  text-align: left;
+  gap: 10px;
+  display: grid;
+}
+
+.login-form label {
+  color: #788793;
+  margin: 4px 0 0 3px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.login-form input {
+  color: #40515d;
+  background: #e7edf5;
+  border: 1px solid #edf1f5;
+  border-radius: 16px;
+  outline: none;
+  width: 100%;
+  height: 47px;
+  padding: 0 16px;
+  font-size: 12px;
+  transition: box-shadow .16s, border-color .16s;
+  box-shadow: inset 5px 5px 9px #cbd1d8, inset -5px -5px 9px #fff;
+}
+
+.login-form input::placeholder {
+  color: #a6b0ba;
+}
+
+.login-form input:focus {
+  border-color: #69c4d2;
+  box-shadow: inset 3px 3px 6px #cbd1d8, inset -3px -3px 6px #fff, 0 0 0 3px #5bb9c92b;
+}
+
+.login-form button {
+  color: #fff;
+  background: #55b8ca;
+  border: 0;
+  border-radius: 16px;
+  min-height: 48px;
+  margin-top: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform .14s, box-shadow .14s, background .14s;
+  box-shadow: 5px 5px 10px #c7cdd4, -5px -5px 10px #fff;
+}
+
+.login-form button:hover {
+  background: #45aabd;
+  box-shadow: 3px 3px 7px #c7cdd4, -3px -3px 7px #fff;
+}
+
+.login-form button:active {
+  transform: translateY(1px);
+  box-shadow: inset 3px 3px 6px #3d9bad, inset -3px -3px 6px #6dc5d4;
+}
+
+.login-form button:focus-visible {
+  outline-offset: 4px;
+  outline: 3px solid #318f9e;
+}
+
+.login-message {
+  color: #8a5860;
+  text-align: center;
+  margin: 3px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.login-admin-note {
+  color: #9ba6b0;
+  margin: 22px 0 0;
+  font-size: 10px;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    border-radius: 25px;
+    padding: 38px 27px 31px;
+    box-shadow: 10px 10px 22px #c6ccd3, -10px -10px 22px #fff;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .login-form input, .login-form button {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=src_login_css_1igg3k2-ikub5._.single.css.map*/

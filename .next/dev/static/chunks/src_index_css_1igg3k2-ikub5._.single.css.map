@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/index.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');\n:root{font-family:'DM Sans',sans-serif;color:#25372e;background:#f7f7f2;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;font-optical-sizing:auto;font-weight:400}*{box-sizing:border-box}body{margin:0;min-width:360px;min-height:100vh}button,input{font:inherit}button{cursor:pointer}#root{min-height:100vh}\n"],"names":[],"mappings":"AACA;;;;;;;;;;;AAA0M;;;;AAAwB;;;;;;AAA+C;;;;AAA0B;;;;AAAsB"}}]
+}
