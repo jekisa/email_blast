@@ -1,0 +1,39 @@
+{
+  "name": "birthday-automation-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/next-local.mjs dev -H localhost -p 3000",
+    "dev:vite": "vite",
+    "build": "prisma generate && next build",
+    "start": "node scripts/next-local.mjs start -H localhost -p 3000",
+    "lint": "oxlint src"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.10.0",
+    "@prisma/client": "^7.10.0",
+    "@supabase/supabase-js": "^2.117.3",
+    "better-auth": "^1.7.7",
+    "dotenv": "^18.0.6",
+    "next": "^16.4.0",
+    "nodemailer": "^10.0.16",
+    "pg": "^8.23.1",
+    "prisma": "^7.10.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "overrides": {
+    "deepmerge-ts": "8.0.2",
+    "mysql2": "3.24.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "oxlint": "^1.0.0",
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  }
+}

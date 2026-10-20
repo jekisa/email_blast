@@ -1,0 +1,809 @@
+/* [project]/web/app/management.css [app-client] (css) */
+.manage-page {
+  background: #fff;
+  border: 1px solid #e3eaec;
+  border-radius: 22px;
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 31px clamp(20px, 3.2vw, 48px);
+  box-shadow: 0 12px 35px #3558650b;
+}
+
+.manage-page > header {
+  margin-bottom: 24px;
+}
+
+.manage-page > header > a {
+  color: #50818d;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.manage-page > header > a:hover {
+  color: #2e91a3;
+}
+
+.manage-page h1 {
+  color: #263d45;
+  letter-spacing: -.65px;
+  margin: 5px 0 7px;
+  font-size: clamp(27px, 3vw, 35px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.manage-page > header p, .manage-card p {
+  color: #75858c;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.manage-card {
+  background: #fff;
+  border: 1px solid #e5ecee;
+  border-radius: 16px;
+  margin: 15px 0;
+  padding: 20px 21px;
+  box-shadow: 0 5px 18px #35586508;
+}
+
+.manage-card h2 {
+  color: #2e4249;
+  letter-spacing: -.2px;
+  margin: 0 0 13px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.manage-card h3 {
+  color: #38525b;
+  margin: 23px 0 11px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.manage-card label {
+  color: #586d75;
+  gap: 7px;
+  margin: 11px 0;
+  font-size: 11px;
+  font-weight: 500;
+  display: grid;
+}
+
+.manage-card input, .manage-card textarea, .manage-card select {
+  color: #2d4249;
+  width: 100%;
+  min-height: 40px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid #dce6e8;
+  border-radius: 9px;
+  outline: 0;
+  padding: 9px 11px;
+  font-size: 12px;
+  transition: border-color .16s, box-shadow .16s;
+}
+
+.manage-card input:focus, .manage-card textarea:focus, .manage-card select:focus {
+  border-color: #55a5b3;
+  box-shadow: 0 0 0 3px #55a5b31e;
+}
+
+.manage-card textarea {
+  resize: vertical;
+  min-height: 100px;
+  line-height: 1.6;
+}
+
+.manage-card button {
+  color: #fff;
+  min-height: 38px;
+  font: inherit;
+  cursor: pointer;
+  background: #318d9e;
+  border: 0;
+  border-radius: 9px;
+  padding: 9px 14px;
+  font-size: 11px;
+  font-weight: 600;
+  transition: background .16s, transform .16s;
+}
+
+.manage-card button:hover:not(:disabled) {
+  background: #287b8a;
+  transform: translateY(-1px);
+}
+
+.manage-card button:disabled {
+  opacity: .52;
+  cursor: not-allowed;
+}
+
+.manage-card button.outline-button {
+  color: #47727c;
+  background: #fff;
+  border: 1px solid #d6e3e5;
+}
+
+.manage-card button.outline-button:hover:not(:disabled) {
+  background: #f4f9fa;
+  border-color: #9cbfc5;
+}
+
+.manage-card-heading, .editor-footer {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.monitoring-click-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  display: grid;
+}
+
+.monitoring-click-summary > .manage-card {
+  margin: 15px 0;
+}
+
+.manage-card-heading h2 {
+  margin: 5px 0 0;
+}
+
+.manage-card-heading .eyebrow {
+  display: block;
+}
+
+.count-pill {
+  color: #4d7c86;
+  background: #eff6f6;
+  border: 1px solid #deeaeb;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  min-width: 26px;
+  min-height: 26px;
+  margin-left: 7px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.manage-message {
+  color: #3b7757;
+  background: #f0f8f3;
+  border: 1px solid #d7e9e1;
+  border-radius: 10px;
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  font-size: 11px;
+}
+
+.manage-hint {
+  color: #75858c !important;
+  margin: 9px 0 !important;
+  font-size: 10px !important;
+}
+
+.upload-label {
+  background: #f8fbfb;
+  border: 1px dashed #b8d0d4;
+  border-radius: 11px;
+  padding: 12px 13px;
+}
+
+.upload-label input {
+  background: #fff;
+  border: 0;
+  min-height: 36px;
+  padding: 6px;
+}
+
+.asset-thumb {
+  object-fit: contain;
+  background: #f7f9f9;
+  border: 1px solid #e5ecee;
+  border-radius: 12px;
+  width: min(340px, 100%);
+  max-height: 240px;
+  margin: 13px 0;
+  display: block;
+}
+
+.editor-footer {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.editor-footer span, .manage-hint {
+  color: #84949a;
+  font-size: 10px;
+}
+
+.table-scroll {
+  border: 1px solid #e7edef;
+  border-radius: 12px;
+  width: 100%;
+  overflow: auto;
+}
+
+.table-scroll table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 650px;
+}
+
+.table-scroll th {
+  color: #667a81;
+  text-align: left;
+  white-space: nowrap;
+  background: #f5f8f9;
+  height: 44px;
+  padding: 0 13px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.table-scroll td {
+  color: #364b52;
+  vertical-align: middle;
+  border-top: 1px solid #edf1f2;
+  height: 52px;
+  padding: 10px 13px;
+  font-size: 11px;
+}
+
+.table-scroll tr:hover td {
+  background: #fbfdfd;
+}
+
+.table-scroll p {
+  padding: 15px;
+}
+
+.table-detail {
+  color: #86969b;
+  margin-top: 4px;
+  font-size: 9px;
+  display: block;
+}
+
+.table-scroll input[type="checkbox"] {
+  width: auto;
+  min-height: auto;
+}
+
+.contacts-pagination, .recipient-pagination {
+  color: #74868c;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 13px 0 0;
+  font-size: 10px;
+  display: flex;
+}
+
+.contacts-pagination button, .recipient-pagination button {
+  padding: 8px 12px !important;
+}
+
+.contacts-pagination button:disabled, .recipient-pagination button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.campaign-section {
+  margin: 23px 0 34px;
+}
+
+.campaign-section-heading {
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+  margin: 0 0 13px;
+  display: flex;
+}
+
+.campaign-section-heading h2 {
+  color: #304850;
+  margin: 5px 0 0;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.campaign-section-heading p {
+  max-width: 520px;
+}
+
+.campaign-start-card {
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  display: flex;
+}
+
+.campaign-start-card h3 {
+  margin: 7px 0;
+}
+
+.campaign-start-controls {
+  align-items: end;
+  gap: 10px;
+  min-width: min(400px, 50%);
+  display: flex;
+}
+
+.campaign-start-controls label {
+  flex: 1;
+  margin: 0;
+}
+
+.campaign-start-controls button {
+  white-space: nowrap;
+}
+
+.campaign-nav {
+  z-index: 2;
+  background: #edf4f5;
+  border: 1px solid #dce7e9;
+  border-radius: 12px;
+  gap: 4px;
+  margin: 18px 0 8px;
+  padding: 4px;
+  display: flex;
+  position: sticky;
+  top: 8px;
+}
+
+.campaign-nav [role="tab"] {
+  color: #5a7279;
+  font: inherit;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: 9px;
+  flex: 1;
+  padding: 11px 14px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.campaign-nav [role="tab"][aria-selected="true"] {
+  color: #348292;
+  background: #fff;
+  box-shadow: 0 2px 6px #34525b12;
+}
+
+.campaign-nav [role="tab"]:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #55a5b3;
+}
+
+.email-preview {
+  background: #f8fafa;
+  border: 1px solid #e5ecee;
+  border-radius: 13px;
+  margin-top: 16px;
+  padding: 14px;
+}
+
+.email-preview .editor-footer {
+  margin-top: 0;
+}
+
+.birthday-calendar-section .manage-card-heading {
+  align-items: center;
+}
+
+.calendar-month-controls {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.calendar-month-controls strong {
+  color: #334b53;
+  text-align: center;
+  text-transform: capitalize;
+  min-width: 135px;
+  font-size: 13px;
+}
+
+.calendar-month-controls .outline-button {
+  min-height: 34px;
+  padding: 7px 10px !important;
+}
+
+.birthday-calendar {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 18px;
+  display: grid;
+}
+
+.calendar-weekday {
+  color: #788a90;
+  text-align: center;
+  padding: 8px 2px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.calendar-empty {
+  min-height: 88px;
+}
+
+.manage-card .calendar-day {
+  color: #3e545b;
+  text-align: left;
+  min-width: 0;
+  min-height: 88px;
+  font: inherit;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #e3eaec;
+  border-radius: 12px;
+  padding: 10px;
+  transition: border-color .15s, background .15s, box-shadow .15s;
+}
+
+.manage-card .calendar-day:hover, .manage-card .calendar-day.selected {
+  border-color: #56a2b0;
+  box-shadow: 0 0 0 2px #56a2b01c;
+}
+
+.manage-card button.calendar-day:hover:not(:disabled) {
+  color: #3e545b;
+  background: #f0f8f8;
+  transform: none;
+}
+
+.manage-card .calendar-day.selected {
+  background: #f0f8f8;
+}
+
+.calendar-day-number {
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+}
+
+.calendar-day-count, .calendar-day-status {
+  color: #3c8591;
+  margin-top: 6px;
+  font-size: 9px;
+  line-height: 1.35;
+  display: block;
+}
+
+.calendar-day-status {
+  color: #7c8c91;
+}
+
+.manage-card .calendar-day.has-birthdays {
+  background: #f5faf9;
+}
+
+.calendar-legend {
+  color: #71838a;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 15px;
+  font-size: 10px;
+  display: flex;
+}
+
+.calendar-legend span {
+  align-items: center;
+  gap: 7px;
+  display: inline-flex;
+}
+
+.calendar-dot {
+  background: #65aab4;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+}
+
+.calendar-dot.accepted {
+  background: #4c9a70;
+}
+
+.calendar-dot.failed {
+  background: #cf675d;
+}
+
+.birthday-calendar-section .manage-card-heading + .monitoring-scope {
+  margin-top: 17px;
+}
+
+.monitoring-scope {
+  gap: 8px;
+  margin: 13px 0;
+  display: flex;
+}
+
+.monitoring-scope .outline-button {
+  padding: 8px 13px !important;
+}
+
+.monitoring-scope .outline-button[aria-pressed="true"] {
+  color: #fff;
+  background: #378c9b;
+  border-color: #378c9b;
+}
+
+@media (max-width: 760px) {
+  .manage-page {
+    border-radius: 18px;
+    padding: 24px 18px;
+  }
+
+  .campaign-section-heading, .campaign-start-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .campaign-start-controls {
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+  }
+
+  .campaign-start-controls button {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .manage-page {
+    padding: 21px 13px;
+  }
+
+  .manage-page h1 {
+    font-size: 25px;
+  }
+
+  .manage-card {
+    border-radius: 13px;
+    padding: 15px;
+  }
+
+  .manage-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .monitoring-click-summary {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .create-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .create-form button {
+    align-self: flex-start;
+  }
+
+  .manage-card-heading {
+    align-items: flex-start;
+  }
+
+  .manage-card-heading, .editor-footer {
+    flex-wrap: wrap;
+  }
+
+  .editor-footer {
+    align-items: flex-start;
+  }
+
+  .contacts-pagination, .recipient-pagination {
+    flex-wrap: wrap;
+    font-size: 9px;
+  }
+
+  .contacts-pagination > span:first-child, .recipient-pagination > span:first-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  .calendar-month-controls {
+    gap: 5px;
+  }
+
+  .calendar-month-controls strong {
+    min-width: 86px;
+    font-size: 11px;
+  }
+
+  .calendar-month-controls .outline-button {
+    font-size: 9px;
+    padding: 6px !important;
+  }
+
+  .birthday-calendar {
+    gap: 3px;
+  }
+
+  .calendar-empty, .calendar-day {
+    min-height: 61px;
+  }
+
+  .calendar-day {
+    border-radius: 8px;
+    padding: 5px;
+  }
+
+  .calendar-day-number {
+    font-size: 10px;
+  }
+
+  .calendar-day-count, .calendar-day-status {
+    margin-top: 4px;
+    font-size: 7px;
+  }
+
+  .calendar-weekday {
+    padding: 5px 0;
+    font-size: 9px;
+  }
+
+  .calendar-legend {
+    gap: 9px;
+    font-size: 8px;
+  }
+
+  .monitoring-scope {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+}
+
+.campaign-section-heading > button {
+  color: #fff;
+  min-height: 38px;
+  font: inherit;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #318d9e;
+  border: 0;
+  border-radius: 9px;
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.campaign-section-heading > button:hover {
+  background: #287b8a;
+}
+
+.campaign-section-heading > button:focus-visible, .campaign-card > summary:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid #55a5b3;
+}
+
+.campaign-card > summary {
+  cursor: pointer;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  display: flex;
+}
+
+.campaign-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.campaign-card > summary:before {
+  content: "\15 B8";
+  color: #75858c;
+  transition: transform .16s;
+}
+
+.campaign-card[open] > summary {
+  border-bottom: 1px solid #eef3f4;
+  padding-bottom: 13px;
+}
+
+.campaign-card[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+.campaign-card-title {
+  flex: 1;
+  gap: 3px;
+  display: grid;
+}
+
+.campaign-card-title strong {
+  color: #2e4249;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.campaign-card-title small {
+  color: #75858c;
+  font-size: 11px;
+}
+
+.campaign-card .campaign-start-controls {
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.campaign-card .campaign-start-controls label {
+  flex: 0 240px;
+}
+
+.campaign-version-row {
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+  display: flex;
+}
+
+.campaign-version-row label {
+  flex: 280px;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .campaign-card .campaign-start-controls label {
+    flex: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .campaign-card > summary:before {
+    transition: none;
+  }
+}
+
+.contacts-search {
+  max-width: 360px;
+}
+
+.sort-button {
+  font: inherit;
+  cursor: pointer;
+  border: 0;
+  align-items: center;
+  gap: 2px;
+  font-weight: 600;
+  display: inline-flex;
+  min-height: 0 !important;
+  color: inherit !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.sort-button span {
+  color: #9aa9ae;
+  font-size: 10px;
+}
+
+th[aria-sort="ascending"] .sort-button span, th[aria-sort="descending"] .sort-button span {
+  color: #318d9e;
+}
+
+.table-scroll[aria-busy="true"] {
+  opacity: .55;
+  transition: opacity .2s;
+}
+
+/*# sourceMappingURL=web_app_management_css_1igg3k2-ikub5._.single.css.map*/

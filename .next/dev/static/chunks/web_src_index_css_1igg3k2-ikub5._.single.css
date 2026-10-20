@@ -1,0 +1,35 @@
+/* [project]/web/src/index.css [app-client] (css) */
+:root {
+  color: #25372e;
+  font-synthesis: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+  background: #f7f7f2;
+  font-family: DM Sans, sans-serif;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 360px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/*# sourceMappingURL=web_src_index_css_1igg3k2-ikub5._.single.css.map*/

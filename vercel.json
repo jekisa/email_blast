@@ -1,0 +1,14 @@
+{
+  "framework": "nextjs",
+  "crons": [
+    {
+      "path": "/api/cron/birthday-dispatch",
+      "schedule": "0 17 * * *"
+    }
+  ],
+  "git": {
+    "deploymentEnabled": {
+      "main": false
+    }
+  }
+}
