@@ -1,0 +1,3 @@
+{
+  "/api/cron/birthday-dispatch/route": "app/api/cron/birthday-dispatch/route.js"
+}

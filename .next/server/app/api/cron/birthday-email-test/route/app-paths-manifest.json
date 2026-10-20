@@ -1,0 +1,3 @@
+{
+  "/api/cron/birthday-email-test/route": "app/api/cron/birthday-email-test/route.js"
+}

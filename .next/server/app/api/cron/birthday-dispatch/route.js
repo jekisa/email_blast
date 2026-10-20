@@ -1,0 +1,11 @@
+var R=require("../../../../chunks/[turbopack]_runtime.js")("server/app/api/cron/birthday-dispatch/route.js")
+R.c("server/chunks/[root-of-the-server]__1esok89fp8mcl._.js")
+R.c("server/chunks/src_domain_ts_1rbwmtnw2wfq6._.js")
+R.c("server/chunks/[root-of-the-server]__0pppemank_g83._.js")
+R.c("server/chunks/[root-of-the-server]__1ll-leajdcdds._.js")
+R.c("server/chunks/[root-of-the-server]__14t34uv09gwae._.js")
+R.c("server/chunks/_1rwr0ew6j_dql._.js")
+R.c("server/chunks/node_modules_next_dist_182yaz9b1ql64._.js")
+R.c("server/chunks/_next-internal_server_app_api_cron_birthday-dispatch_route_actions_0086apps7ts8s.js")
+R.m(66819)
+module.exports=R.m(66819).exports

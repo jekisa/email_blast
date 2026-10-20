@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node scripts/next-local.mjs dev -H localhost -p 3000",
     "dev:vite": "vite",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && node scripts/next-local.mjs build",
     "start": "node scripts/next-local.mjs start -H localhost -p 3000",
     "lint": "oxlint src"
   },

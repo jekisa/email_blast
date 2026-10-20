@@ -1,0 +1,13 @@
+var R=require("../../../../../../chunks/[turbopack]_runtime.js")("server/app/api/admin/campaigns/[id]/promo/route.js")
+R.c("server/chunks/[root-of-the-server]__01o-cn843cm8c._.js")
+R.c("server/chunks/[root-of-the-server]__04y2o2r2g55cb._.js")
+R.c("server/chunks/_1stbeum4ltkc_._.js")
+R.c("server/chunks/node_modules_next_dist_182yaz9b1ql64._.js")
+R.c("server/chunks/_1jt3zgti00prx._.js")
+R.c("server/chunks/node_modules_1qqllkm8z1nqc._.js")
+R.c("server/chunks/[root-of-the-server]__01s217q3l96ii._.js")
+R.c("server/chunks/node_modules_03fxa8v08l663._.js")
+R.c("server/chunks/node_modules_@better-auth_0zj8hktur3rio._.js")
+R.c("server/chunks/1oeh_server_app_api_admin_campaigns_[id]_promo_route_actions_10pe3lw_ifm4g.js")
+R.m(9443)
+module.exports=R.m(9443).exports

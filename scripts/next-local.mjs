@@ -8,6 +8,10 @@ const scriptDir = dirname(fileURLToPath(import.meta.url))
 const projectRoot = resolve(scriptDir, '../..')
 dotenv.config({ path: resolve(projectRoot, '.env') })
 
+if (process.argv.includes('build')) {
+  process.env.NODE_ENV = 'production'
+}
+
 const caPath = resolve(projectRoot, 'prod-ca-2021.crt')
 if (!process.env.SUPABASE_CA_CERT && existsSync(caPath)) {
   process.env.SUPABASE_CA_CERT = readFileSync(caPath, 'utf8')

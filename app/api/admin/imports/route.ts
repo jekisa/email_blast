@@ -33,7 +33,7 @@ export async function POST(request: Request) {
   const { session, response } = await requireAdmin(request)
   if (response) return response
   const contentLength = Number(request.headers.get('content-length') ?? 0)
-  if (contentLength > 5 * 1024 * 1024) return Response.json({ error: 'Payload impor maksimal 5 MB.' }, { status: 413 })
+  if (contentLength > 10 * 1024 * 1024) return Response.json({ error: 'Payload impor maksimal 10 MB.' }, { status: 413 })
   const body: unknown = await request.json().catch(() => null)
   if (!isRecord(body) || !Array.isArray(body.rows)) {
     return Response.json({ error: 'File dan baris impor tidak valid.' }, { status: 400 })

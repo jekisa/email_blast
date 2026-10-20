@@ -97,7 +97,7 @@ export default function ContactsManager() {
     if (!file) return
     setBusy(true); setMessage(''); setImportProgress(null); setDuplicateRows([]); setDuplicatePage(1)
     try {
-      if (file.size > 5 * 1024 * 1024) throw new Error('File maksimal 5 MB.')
+      if (file.size > 10 * 1024 * 1024) throw new Error('File maksimal 10 MB.')
       const buffer = await file.arrayBuffer()
       let content: string
       try { content = new TextDecoder('utf-8', { fatal: true }).decode(buffer) } catch { content = new TextDecoder('windows-1252').decode(buffer) }

@@ -188,7 +188,7 @@ function ContactsManager() {
         setDuplicateRows([]);
         setDuplicatePage(1);
         try {
-            if (file.size > 5 * 1024 * 1024) throw new Error('File maksimal 5 MB.');
+            if (file.size > 10 * 1024 * 1024) throw new Error('File maksimal 10 MB.');
             const buffer = await file.arrayBuffer();
             let content;
             try {

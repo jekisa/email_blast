@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "functions": {
+    "/api/admin/assets": {},
+    "/api/admin/campaigns": {},
+    "/api/admin/campaigns/[id]/preview": {},
+    "/api/admin/customers": {},
+    "/api/admin/email/test": {},
+    "/api/admin/exports/claims": {},
+    "/api/admin/imports": {},
+    "/api/cron/birthday-dispatch": {},
+    "/api/cron/birthday-email-test": {},
+    "/api/track/[dispatchId]": {}
+  }
+}
